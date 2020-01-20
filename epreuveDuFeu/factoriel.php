@@ -9,5 +9,13 @@ for($index = 1; $index <= $value ; $index++){
     
     $result *=$index;
 }
-echo $result;
+echo factorielRecursive($value);
+function factorielRecursive($value){
+    
+    if($value<=1) return 1;
+    return $value*factorielRecursive(($value-1));
+    
+    
+}
+
 ?>
